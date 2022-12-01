@@ -12,6 +12,10 @@ def get_page_title():
             print(x.text) 
 
 def get_page_title_child(): 
-    for i in soup.find_all(class_='')
+    for i in soup.find_all(class_='list-style-none'):
+        for x in i.find_all('a'): 
+            print(x.text) 
     
 
+get_page_title()
+get_page_title_child()
